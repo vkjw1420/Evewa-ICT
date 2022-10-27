@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="500dp"
+        android:layout_height="250dp"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="-1dp"
+            android:padding="20dp"
+            android:text="조건을 입력해 주세요." />
+
+        <Button
+            android:id="@+id/cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="11dp"
+            android:layout_marginRight="11dp"
+            android:layout_marginBottom="23dp"
+            android:layout_toStartOf="@+id/yesBtn"
+            android:layout_toLeftOf="@+id/yesBtn"
+            android:layout_weight="1"
+            android:text="CANCLE" />
+
+        <Button
+            android:id="@+id/yesBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="17dp"
+            android:layout_marginRight="17dp"
+            android:layout_marginBottom="23dp"
+            android:layout_weight="1"
+            android:text="OK" />
+
+        <EditText
+            android:id="@+id/rearValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/frontValue"
+            android:layout_marginStart="51dp"
+            android:layout_marginLeft="51dp"
+            android:layout_marginTop="-2dp"
+            android:layout_toEndOf="@+id/mySpinner"
+            android:layout_toRightOf="@+id/mySpinner"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/mySpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="38dp"
+            android:layout_alignTop="@+id/frontValue"
+            android:layout_marginStart="61dp"
+            android:layout_marginLeft="61dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/frontValue"
+            android:layout_toRightOf="@+id/frontValue" />
+
+        <Spinner
+            android:id="@+id/leftVariable"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_alignTop="@+id/frontValue"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="-54dp" />
+
+        <EditText
+            android:id="@+id/frontValue"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="69dp"
+            android:layout_marginLeft="69dp"
+            android:layout_marginTop="118dp"
+            android:ems="10"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/rightVariable"
+            android:layout_width="140dp"
+            android:layout_height="42dp"
+            android:layout_alignTop="@+id/leftVariable"
+            android:layout_marginStart="108dp"
+            android:layout_marginLeft="108dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/leftVariable"
+            android:layout_toRightOf="@+id/leftVariable" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

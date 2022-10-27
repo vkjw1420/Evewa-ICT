@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/Call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="행    동"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/Input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="입    력"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Call"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/Output"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:width="140dip"
+        android:text="출    력"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/Selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="선    택"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Output"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/Loop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="반    복"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Selection"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Assignment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="변    수"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.006"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Loop"
+        app:layout_constraintVertical_bias="0.005" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="140dip"
+        android:text="제    거"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Assignment" />
+
+    <Button
+        android:id="@+id/executionCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:width="140dip"
+        android:text="명령 실행"
+        app:layout_constraintBottom_toTopOf="@+id/delete"
+        app:layout_constraintStart_toStartOf="@+id/delete" />
+
+    <Button
+        android:id="@+id/makeCommand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:width="140dip"
+        android:text="명령 생선"
+        app:layout_constraintBottom_toTopOf="@+id/executionCommand"
+        app:layout_constraintStart_toStartOf="@+id/executionCommand" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toEndOf="@+id/Call"
+        app:layout_constraintTop_toTopOf="@+id/Call"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RelativeLayout
+            android:id="@+id/draw"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/Assignment"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toEndOf="@+id/Selection"
+            app:layout_constraintTop_toTopOf="@+id/Call"
+            app:layout_constraintVertical_bias="0.0">
+
+            <Button
+                android:id="@+id/buttonConnect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnWearable"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="-87dp"
+                android:layout_marginRight="-87dp"
+                android:layout_toStartOf="@+id/btnWearable"
+                android:layout_toLeftOf="@+id/btnWearable"
+                android:text="연결하기"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/Start"
+                android:layout_width="120px"
+                android:layout_height="120px"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="11dp"
+                android:background="@drawable/oval"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="Start"
+                android:textAllCaps="false"
+                android:textColor="#000000" />
+
+            <Button
+                android:id="@+id/btnWearable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Button" />
+
+            <!--<TextView
+                android:id="@+id/End"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="100dp"
+                android:layout_marginLeft="100dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/oval"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="End"
+                android:textAllCaps="false"
+                android:textColor="#000000" />-->
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="140dp"
+        android:layout_height="152dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Assignment" />
+
+    <TextView
+        android:id="@+id/code"
+        android:layout_width="1112dp"
+        android:layout_height="796dp"
+        android:background="#DAF1D3"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/scrollView2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/codeOn"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="codeOn"
+        app:layout_constraintBottom_toTopOf="@+id/makeCommand"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/codeOff"
+        android:layout_width="57dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="CodeOff"
+        app:layout_constraintBottom_toTopOf="@+id/makeCommand"
+        app:layout_constraintStart_toEndOf="@+id/codeOn"
+        app:layout_constraintTop_toTopOf="@+id/codeOn"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
